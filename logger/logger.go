@@ -8,6 +8,7 @@ import (
 	"runtime/debug"
 	"strings"
 	"time"
+
 	"web_app/settings"
 
 	"github.com/gin-gonic/gin"
@@ -26,7 +27,7 @@ func Init(cfg *settings.LogConfig) (err error) {
 		cfg.MaxAge,
 	)
 	encoder := getEncoder()
-	var l = new(zapcore.Level)
+	l := new(zapcore.Level)
 	err = l.UnmarshalText([]byte(cfg.Level))
 	if err != nil {
 		return

@@ -2,6 +2,7 @@ package redis
 
 import (
 	"fmt"
+
 	"web_app/settings"
 
 	"github.com/go-redis/redis"

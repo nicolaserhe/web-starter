@@ -2,6 +2,7 @@ package mysql
 
 import (
 	"fmt"
+
 	"web_app/settings"
 
 	_ "github.com/go-sql-driver/mysql"
